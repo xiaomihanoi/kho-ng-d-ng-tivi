@@ -23,7 +23,7 @@ const apps = [
 {name:"VietPlayTV",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/vietplaytv.apk"},
 {name:"Xem TV365",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/Xem.TV365.-.V3.apk"},
 {name:"YouTube TV",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/ytb.apk"},
-{name:"YouTube Quốc tế",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/ytb2.apk"}
+{name:"YouTube Quốc tế",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/ytb2.apk"},
 {name:"Tiệm phim",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/tiemphim.apk"},
 
 ];

@@ -6,7 +6,7 @@ apps:[
 
 {name:"DL Tivi",badge:"Mới",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/ADLTivi_v16.0.2.apk"},
 {name:"OK Tivi",badge:"Ổn định",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/oktivi.apk"},
-{name:"QuanTV",badge:"TV",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/quantv.apk"},
+{name:"QuanTV giong nói",badge:"TV",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/quantv-noi.apk"},
 {name:"VietPlayTV",badge:"TV",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/vietplaytv.apk"},
 {name:"TV365",badge:"TV",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/Xem.TV365.-.V3.apk"},
 {name:"HS",badge:"TV",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/HSTIVI_2.6.apk"},
@@ -31,7 +31,7 @@ title:"🎬 nhà đài",
 apps:[
 
 {name:"VTV go",badge:"truyen hinh",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/VTVgo.TV_v12.6.29.apk"},
-{name:"FPT",badge:"ổn định",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/net.fptplay.ottbox_base.apk"},
+{name:"FPT",badge:"ổn định",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/FPT_Play_.7.32.11.apk"},
 {name:"My TV",badge:"ổn định",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/vn.mytvnet.b2cott_base.apk"},
 {name:"TV 360",badge:"tốt",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/com.viettel.tv360.tv_base.apk"},
 {name:"VTV prime",badge:"tốt",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/VTVprime_v1.11.0_1.apk"}
@@ -44,8 +44,9 @@ title:"🛠 Tiện ích",
 apps:[
 
 {name:"REMOTE ADB",badge:"ADB",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/adb.apk"},
-{name:"DL Store",badge:"Store",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/DLStore_v16.0.4.apk"},
+{name:"DL Store",badge:"Store",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/DLStore_v16.0.5.apk"},
 {name:"MStore",badge:"Store",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/mstore.apk"},
+{name:"Beecuse",badge:"Store",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/BeecubeStore.apk"},
 {name:"Netflix",badge:"Official",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/netflix.apk"},
 {name:"TikTok",badge:"New",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/tiktok.apk"},
 {name:"Giọng nói Kiki",badge:"Voice",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/kiki.apk"},

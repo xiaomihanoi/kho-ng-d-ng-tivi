@@ -31,7 +31,8 @@ title:"🎬 nhà đài",
 apps:[
 
 {name:"VTV go",badge:"truyen hinh",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/VTVgo.TV_v12.6.29.apk"},
-{name:"FPT",badge:"ổn định",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/FPT_Play_.7.32.11.apk"},
+{name:"FPT",badge:"Tốt",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/fptplay.apk"},
+{name:"FPT",badge:"Androi 14",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/fptplay14.apk"},
 {name:"My TV",badge:"ổn định",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/vn.mytvnet.b2cott_base.apk"},
 {name:"TV 360",badge:"tốt",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/com.viettel.tv360.tv_base.apk"},
 {name:"VTV prime",badge:"tốt",link:"https://github.com/xiaomihanoi/kho-ng-d-ng-tivi/releases/download/v1.0/VTVprime_v1.11.0_1.apk"}

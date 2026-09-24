@@ -1,207 +1,44 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kho Ứng Dụng Xiaomi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent-color: #ff6b00;
-            --accent-hover: #e05d00;
-            --text-main: #f8fafc;
-            --text-sub: #94a3b8;
-            --border-color: #334155;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
-        body { background-color: var(--bg-color); color: var(--text-main); padding-bottom: 50px; }
+<title>Kho Ứng Dụng Xiaomi HN</title>
 
-        header {
-            text-align: center;
-            padding: 35px 20px 20px 20px;
-            background: linear-gradient(180deg, rgba(255,107,0,0.15) 0%, rgba(15,23,42,0) 100%);
-        }
+<link rel="stylesheet" href="style.css">
 
-        header h1 { font-size: 2.2rem; font-weight: 700; color: var(--accent-color); margin-bottom: 8px; }
-        header .subtitle { font-size: 0.95rem; color: var(--text-sub); margin-bottom: 8px; }
-        header .contact { font-size: 1.05rem; font-weight: 600; color: #38bdf8; }
-
-        .category-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .cat-btn {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-sub);
-            padding: 10px 18px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .cat-btn:hover, .cat-btn.active {
-            background: var(--accent-color);
-            color: #fff;
-            border-color: var(--accent-color);
-        }
-
-        .main-content { max-width: 1100px; margin: 20px auto; padding: 0 20px; }
-        .app-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
-
-        .app-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-
-        .app-card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
-        .app-icon { width: 72px; height: 72px; border-radius: 18px; object-fit: cover; margin-bottom: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .app-name { font-size: 1.05rem; font-weight: 600; margin-bottom: 6px; color: var(--text-main); }
-        .app-meta { font-size: 0.8rem; color: var(--text-sub); margin-bottom: 16px; }
-
-        .btn-download {
-            width: 100%;
-            background: var(--accent-color);
-            color: white;
-            text-decoration: none;
-            padding: 10px 0;
-            border-radius: 10px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            display: block;
-        }
-
-        .btn-download:hover { background: var(--accent-hover); }
-    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Kho ứng dụng Xiaomi</h1>
-        <p class="subtitle">Cài đặt tiếng việt - Xử lý các lỗi liên quan về tivi</p>
-        <p class="contact"><i class="fa-solid fa-phone"></i> Liên hệ: 0379750874</p>
-    </header>
+<header class="top-header">
 
-    <!-- Đủ 6 đề mục theo yêu cầu -->
-    <div class="category-container">
-        <button class="cat-btn active" onclick="filterCategory('all', this)"><i class="fa-solid fa-border-all"></i> Tất cả</button>
-        <button class="cat-btn" onclick="filterCategory('truyen-hinh', this)"><i class="fa-solid fa-tv"></i> Truyền hình</button>
-        <button class="cat-btn" onclick="filterCategory('giai-tri', this)"><i class="fa-solid fa-gamepad"></i> Giải trí</button>
-        <button class="cat-btn" onclick="filterCategory('kho-app', this)"><i class="fa-solid fa-store"></i> Kho app</button>
-        <button class="cat-btn" onclick="filterCategory('nha-dai', this)"><i class="fa-solid fa-tower-cell"></i> Nhà đài</button>
-        <button class="cat-btn" onclick="filterCategory('tien-ich', this)"><i class="fa-solid fa-wrench"></i> Tiện ích</button>
-        <button class="cat-btn" onclick="filterCategory('youtube', this)"><i class="fa-brands fa-youtube"></i> YouTube</button>
-    </div>
+<div class="logo-box">
+📦
+</div>
 
-    <main class="main-content">
-        <div class="app-grid" id="appGrid"></div>
-    </main>
+<div class="header-text">
 
-    <script>
-        // Danh sách toàn bộ 29 APK từ hình ảnh của bạn được phân loại chính xác
-        const appsData = [
-            // TRUYỀN HÌNH
-            { name: "DL Tivi", category: "truyen-hinh", downloads: "12.5k", apkUrl: "https://github.com/phamxuanhoa10062005-glitch/kho-app-xiaomi/releases/download/v1.0/ADLTivi_v16.0.2.apk" },
-            { name: "Cobe TV", category: "truyen-hinh", downloads: "8.3k", apkUrl: "./apks/cobetv_101.apk" },
-            { name: "HSTIVI", category: "truyen-hinh", downloads: "9.1k", apkUrl: "./apks/HSTIVI_2.6.apk" },
-            { name: "VietMITV", category: "truyen-hinh", downloads: "15.2k", apkUrl: "./apks/vietmitv v20.apk" },
-            { name: "VietPlay TV", category: "truyen-hinh", downloads: "6.4k", apkUrl: "./apks/vietplaytv.apk" },
-            { name: "TV365", category: "truyen-hinh", downloads: "11.0k", apkUrl: "./apks/TV365_V8.5.apk" },
-            { name: "SportStream", category: "truyen-hinh", downloads: "7.8k", apkUrl: "./apks/sportstream.apk" },
-            { name: "Sports TV Android 15", category: "truyen-hinh", downloads: "5.6k", apkUrl: "./apks/SportsTV-5.2.3-android15-signed_1.apk" },
+<h1>KHO ỨNG DỤNG XIAOMI HN</h1>
 
-            // NHÀ ĐÀI
-            { name: "VTVgo TV", category: "nha-dai", downloads: "25.1k", apkUrl: "./apks/VTVgo TV_v12.6.29.apk" },
-            { name: "Viettel TV360", category: "nha-dai", downloads: "18.4k", apkUrl: "./apks/com.viettel.tv360.tv_base.apk" },
-            { name: "FPT Play", category: "nha-dai", downloads: "22.0k", apkUrl: "./apks/fptplay.apk" },
-            { name: "FPT Play v14", category: "nha-dai", downloads: "14.3k", apkUrl: "./apks/fptplay14.apk" },
-            { name: "MyTVNet", category: "nha-dai", downloads: "16.8k", apkUrl: "./apks/vn.mytvnet.b2cott_base.apk" },
+<p>Hỗ trợ cài đặt Tivi Xiaomi & nâng cấp phần mềm</p>
 
-            // GIẢI TRÍ
-            { name: "Netflix", category: "giai-tri", downloads: "30.5k", apkUrl: "./apks/netflix.apk" },
-            { name: "Phim 4K", category: "giai-tri", downloads: "19.2k", apkUrl: "./apks/phim4k.apk" },
-            { name: "SG Phim", category: "giai-tri", downloads: "8.7k", apkUrl: "./apks/sgphim.apk" },
-            { name: "Get Out 2", category: "giai-tri", downloads: "10.1k", apkUrl: "./apks/Get_Out_2.end.apk" },
-            { name: "TikTok TV", category: "giai-tri", downloads: "28.0k", apkUrl: "./apks/tiktok.apk" },
+<div class="phone">
+📞 0379 750 874
+</div>
 
-            // KHO APP
-            { name: "Beecube Store", category: "kho-app", downloads: "7.2k", apkUrl: "./apks/BeecubeStore.apk" },
-            { name: "DLStore", category: "kho-app", downloads: "9.5k", apkUrl: "./apks/DLStore_v16.0.5.apk" },
-            { name: "Đông Anh Store", category: "kho-app", downloads: "6.1k", apkUrl: "./apks/ĐôngAnhStore_25.3.2.apk" },
-            { name: "MStore", category: "kho-app", downloads: "5.4k", apkUrl: "./apks/mstore.apk" },
-            { name: "Smart TV Store", category: "kho-app", downloads: "12.3k", apkUrl: "./apks/SMART TV STORE.apk" },
+</div>
 
-            // TIỆN ÍCH
-            { name: "ADB Utility", category: "tien-ich", downloads: "4.2k", apkUrl: "./apks/adb.apk" },
-            { name: "Kiki Trợ Lý Giọng Nói", category: "tien-ich", downloads: "18.9k", apkUrl: "./apks/kiki.apk" },
-            { name: "QuanTV Nội", category: "tien-ich", downloads: "3.5k", apkUrl: "./apks/quantv-noi.apk" },
-            { name: "SMI Home All", category: "tien-ich", downloads: "4.1k", apkUrl: "./apks/smihomeall.apk" },
-            { name: "SuperVoice", category: "tien-ich", downloads: "8.6k", apkUrl: "./apks/supervoice.apk" },
+</header>
 
-            // YOUTUBE (Tự thêm SmartTube nếu bạn muốn)
-            { name: "SmartTube TV", category: "youtube", downloads: "35.0k", apkUrl: "./apks/smarttube.apk" }
-        ];
+<hr>
 
-        // Tự tạo Icon logo chữ nổi bật theo tên App
-        function generateAutoIcon(appName) {
-            const colors = ['ff6b00', '2563eb', '7c3aed', '059669', 'dc2626', 'd97706'];
-            const randomColor = colors[Math.abs(appName.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)) % colors.length];
-            return `https://ui-avatars.com/api/?name=${encodeURIComponent(appName)}&background=${randomColor}&color=ffffff&size=128&bold=true&length=2`;
-        }
+<main id="app-list"></main>
 
-        function renderApps(categoryFilter = 'all') {
-            const grid = document.getElementById('appGrid');
-            grid.innerHTML = '';
+<script src="script.js"></script>
 
-            const filtered = categoryFilter === 'all' 
-                ? appsData 
-                : appsData.filter(app => app.category === categoryFilter);
-
-            filtered.forEach(app => {
-                const autoIconUrl = generateAutoIcon(app.name);
-
-                const card = document.createElement('div');
-                card.className = 'app-card';
-                card.innerHTML = `
-                    <img src="${autoIconUrl}" class="app-icon" alt="${app.name}">
-                    <div class="app-name">${app.name}</div>
-                    <div class="app-meta">${app.downloads} lượt tải</div>
-                    <a href="${app.apkUrl}" class="btn-download" download><i class="fa-solid fa-download"></i> Tải về</a>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        function filterCategory(cat, btn) {
-            document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            renderApps(cat);
-        }
-
-        renderApps('all');
-    </script>
 </body>
+
 </html>
